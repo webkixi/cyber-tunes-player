@@ -1,0 +1,21 @@
+{
+  "name": "CyberTunes Player",
+  "short_name": "CyberTunes",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#00f3ff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/9002/9002208.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/9002/9002208.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
