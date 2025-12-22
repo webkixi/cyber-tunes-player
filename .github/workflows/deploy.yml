@@ -92,9 +92,6 @@ jobs:
         cp ${{ env.BUILD_DIR }}/index.html ${{ env.BUILD_DIR }}/404.html
     
     # 第六步：上传构建产物
-    - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
     - name: Upload artifact
       # 使用 GitHub Pages 专用的上传 action
       uses: actions/upload-pages-artifact@v3

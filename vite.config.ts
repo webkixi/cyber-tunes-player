@@ -15,6 +15,11 @@ export default defineConfig(({ mode }) => {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
         'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
       },
+      // 其他可选配置
+      build: {
+        outDir: 'dist',
+        sourcemap: false,  // 生产环境关闭 sourcemap
+      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
