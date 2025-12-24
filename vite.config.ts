@@ -10,15 +10,9 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-      base: process.env.BASE_URL || '/',
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
         'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
-      // 其他可选配置
-      build: {
-        outDir: 'dist',
-        sourcemap: false,  // 生产环境关闭 sourcemap
       },
       resolve: {
         alias: {
